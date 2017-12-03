@@ -1,3 +1,8 @@
+html
+{
+    font-size: 20px;
+}
+
 #container
 {
     font-size: 30px;
@@ -8,8 +13,65 @@
     background-color: rgba(0, 255, 255, 0.6);
     margin-bottom: 15px;
 }
+
 #pixele
 {
     width: 400px;
     
 }
+
+#em
+{
+    width: 20em;
+/*
+    EM
+Wartość 1go em jest obliczana przez przeglądarkę internetową na podstawie wartości właściwości font-size elementu rodzica
+*/
+}
+
+#ex
+{
+    width: 20ex;
+    
+/*
+        EX
+    Wartość 1go ex jest obliczana przez przeglądarkę internetową na podstawie wysokości małych liter (liter bez wydłużeń czyli ą, ć, i, z itp.) danej czcionki elementu rodzica, przeważnie jest to wartość w granicy 51% ~ 52% całej wartości wielkości czcionki
+*/
+}
+
+#rem
+{
+    width: 20rem;
+    
+/*
+    REM
+Jest ona zdefiniowana jako wielkość tzw. bazowej czcionki dokumentu (stąd nazwa, bazowy em od angielskiego root em).
+Wartość 1go rem jest obliczana przez przeglądarkę internetową na podstawie wartości właściwości font-size elementu HTML, który jest najwyżej w hierarchii dokumentu HTML, czyli tym elementem, jest element html.
+*/
+    
+}
+
+#procenty
+{
+    width: 50%;
+    font-size: 50%;
+}
+
+/*
+Viewport units
+Są to jednostki stosunkowo nowe. Pozwalają one zapisać reguły zależnie od wielkości
+okna użytkownika.
+Do tych jednostek należą:
+vw - viewport width
+vh - viewport height
+vmin - viewport minimum
+vmax - viewport maximum
+*/
+
+#vw
+{
+    width: 60vw;
+}
+
+
+
