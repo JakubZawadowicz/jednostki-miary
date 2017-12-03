@@ -68,10 +68,60 @@ vmin - viewport minimum
 vmax - viewport maximum
 */
 
+
+
 #vw
 {
     width: 60vw;
+    
+/*
+    VW
+Viewport width - 1n vw jest równy 1% wartości szerokości przestrzeni w jakiej została wyświetlona nasza strona internetowa (przeważnie przestrzeni przeglądarki internetowej).
+Na przykład jeżeli szerokość przeglądarki jest równa 1024px to:
+1vw = 1% * 1024px = 10.24px
+8vw = 8% * 1024px = 81.92px
+*/
+    
 }
 
 
+#vh
+{
+    width: 60vh;
+    
+    
+/*
+    VH
+Viewport height- 1n vh jest równy 1% wartości wysokości przestrzeni w jakiej została wyświetlona nasza strona internetowa (przeważnie przestrzeni przeglądarki internetowej).
+Na przykład jeżeli wysokość przeglądarki jest równa 768px to:
+1vh = 1% * 768px = 7.68px
+8vh = 8% * 768px = 61.44px
+*/
+}
 
+#vmin
+{
+    width: 60vmin;
+   
+/*
+    VMIN
+Viewport minimum - 1n vmin jest równy 1vw lub 1vh, w zależności która wartość jest aktualnie mniejsza.
+Na przykład jeżeli 1vw jest równe 10.24px oraz 1vh jest równe 7.68px to:
+1vmin = 1 * min(7.68px, 10.24px) = 7.68px
+8vmin = 8 * min(7.68px, 10.24px) = 61.44px
+*/
+}
+
+#vmax
+{
+    width: 60vmax;
+    
+    
+/*
+    VMAX
+Viewport maximum - 1n vmax jest równy 1vw lub 1vh, w zależności która wartość jest aktualnie większa.
+Na przykład jeżeli 1vw jest równe 10.24px oraz 1vh jest równe 7.68px to:
+1vmin = 1 * max(7.68px, 10.24px) = 10.24px
+8vmin = 8 * max(7.68px, 10.24px) = 81.92px
+*/
+}
